@@ -1,0 +1,13 @@
+TVITT GamepadViewer — pacote de personalização
+
+1. Envie TVITT_GamepadViewer.css para um repositório público no GitHub.
+2. Copie o link RAW do CSS (ou use jsDelivr).
+3. Substitua o valor de css= no seu link do overlay pelo URL do arquivo, codificado.
+4. No OBS, use o link atualizado como Fonte de Navegador.
+
+Este CSS importa o estilo Cyphers original e troca a base pelo PNG TVITT embutido,
+mantendo a animação dos botões. É necessário publicar o CSS para o overlay acessá-lo.
+
+A imagem de origem não contém os gatilhos brancos superiores; eles são desenhados
+pelo CSS Cyphers quando acionados. A calibração visual é aproximada e pode precisar
+de ajuste fino em alguns controles.
