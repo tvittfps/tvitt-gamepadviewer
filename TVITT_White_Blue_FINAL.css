@@ -1,0 +1,33 @@
+/* TVITT White & Blue - artwork preserved, Cyphers geometry only. */
+@import url("https://cdn.jsdelivr.net/gh/M4teuzz/skingpv@98a9f70e9b66acf3f2104c30cf35a0de073d0b15/skin-gpv-cyphers-xbox/stylesheet.css");
+:root { --cyphers-red:#087bff; --cyphers-bright:#39aaff; --cyphers-glow:rgba(0,110,255,.6); --active-red:brightness(0) saturate(100%) invert(35%) sepia(100%) saturate(3900%) hue-rotate(202deg) brightness(113%); }
+/* The original TVITT art, NOT the Cyphers artwork. */
+.controller.custom { background-image:url("./TVITT_base.png") !important; background-size:750px 630px !important; background-position:center !important; filter:drop-shadow(0 0 5px rgba(0,0,0,.65)) !important; }
+.controller.custom::before,.controller.custom::after { display:none !important; content:none !important; }
+/* All idle buttons are already drawn into the original artwork. */
+.custom .meta { background:none !important; border:0 !important; box-shadow:none !important; }
+.custom .meta.pressed { background:rgba(18,132,255,.25) !important; box-shadow:0 0 15px #168cff !important; }
+.custom .button { background:none !important; border-radius:50% !important; opacity:0 !important; }
+.custom .button.pressed { opacity:1 !important; background:rgba(18,132,255,.38) !important; box-shadow:0 0 12px #168cff !important; margin-top:0 !important; filter:none !important; }
+/* Place live hit areas over the exact visible circles in the supplied artwork. */
+.custom .abxy {left:480px !important;top:192px !important;width:150px !important;height:155px !important;}
+.custom .y {left:48px !important;top:5px !important;background-position:0 0 !important;}
+.custom .x {left:0 !important;top:56px !important;background-position:0 0 !important;}
+.custom .b {right:0 !important;top:56px !important;background-position:0 0 !important;}
+.custom .a {left:48px !important;top:107px !important;background-position:0 0 !important;}
+.custom .back,.custom .start {background:none !important;opacity:0 !important;border-radius:50% !important;}
+.custom .back.pressed,.custom .start.pressed {background:rgba(0,120,255,.45) !important;box-shadow:0 0 9px #168cff !important;opacity:1 !important;filter:none !important;}
+.custom .arrows {left:302px !important;top:266px !important;width:140px !important;}
+/* Sticks: keep movement but show only the blue glow when displaced or clicked. */
+.custom .sticks {left:137px !important;top:228px !important;width:377px !important;height:204px !important;}
+.custom .stick {background:none !important;border:2px solid rgba(20,130,255,.75) !important;box-sizing:border-box !important;box-shadow:0 0 10px rgba(0,115,255,.7),inset 0 0 9px rgba(0,115,255,.4) !important;filter:none !important;}
+.custom .stick.right {left:300px !important;top:114px !important;}
+.custom .stick.pressed {box-shadow:0 0 18px #188cff !important;}
+.custom .dpad {left:216px !important;top:337px !important;}
+.custom .dpad::before {display:none !important;}
+.custom .face {background:none !important;filter:none !important;opacity:0 !important;}
+.custom .face.pressed {background:rgba(0,125,255,.48) !important;opacity:1 !important;box-shadow:0 0 10px #168cff !important;border-radius:8px !important;}
+/* Trigger and bumper activation highlights follow the original controller outline. */
+.custom .trigger,.custom .bumper {background-image:none !important;background-color:rgba(0,112,255,.75) !important;filter:drop-shadow(0 0 6px #168cff) !important;}
+.custom .trigger {clip-path:polygon(38% 0,80% 0,100% 25%,100% 90%,0 100%,10% 45%);}
+.custom .bumper {clip-path:polygon(0 45%,80% 0,100% 45%,90% 95%,0 100%);}
