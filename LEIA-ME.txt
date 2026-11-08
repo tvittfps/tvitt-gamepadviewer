@@ -1,1 +1,11 @@
-TVITT V4: borda externa da carcaça ampliada em 16px sem alterar os recortes internos e as coordenadas V3. Publique o CSS no GitHub e teste. O encaixe final dos bumpers pode requerer ajuste adicional após novo print.
+TVITT WHITE & BLUE V5
+
+1. Envie TVITT_GamepadViewer_White_Blue_v5.css para a raiz do repositório público tvittfps/tvitt-gamepadviewer (branch main).
+2. Abra:
+https://overlay.gamepadviewer.com/?p=1&s=1&smeter=1&nocurve=1&css=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Ftvittfps%2Ftvitt-gamepadviewer%40main%2FTVITT_GamepadViewer_White_Blue_v5.css
+3. Teste todos os controles e compare os bumpers; não foi possível executar um teste de Gamepad físico neste ambiente.
+
+O CSS contém o PNG incorporado (data URI), então você só precisa publicar o arquivo CSS.
+O PNG separado é fornecido como referência/backup.
+A arte original aprovada foi mantida em cores, textos e grafismos; somente foi ajustada à geometria de 750x630 e à silhueta da base branca original.
+O CSS importa a base Cyphers para preservar os controles interativos, incluindo as coordenadas da V3.
