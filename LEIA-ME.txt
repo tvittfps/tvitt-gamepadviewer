@@ -1,0 +1,1 @@
+TVITT V4: borda externa da carcaça ampliada em 16px sem alterar os recortes internos e as coordenadas V3. Publique o CSS no GitHub e teste. O encaixe final dos bumpers pode requerer ajuste adicional após novo print.
