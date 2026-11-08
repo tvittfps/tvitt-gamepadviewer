@@ -1,0 +1,6 @@
+TVITT V3
+1. Envie TVITT_GamepadViewer_v3.css para a raiz do repositorio tvittfps/tvitt-gamepadviewer no GitHub.
+2. Acesse o link fornecido na resposta do ChatGPT.
+3. O CSS importa a skin Cyphers e incorpora a imagem TVITT; nao e necessario hospedar o PNG para esse teste.
+4. Ajustes: ABXY, D-pad, Start e Select visiveis.
+5. Ainda requer teste com controle conectado.
