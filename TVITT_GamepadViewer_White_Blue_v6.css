@@ -1,0 +1,55 @@
+/* TVITT White & Blue V6 — correção de elementos duplicados.
+   Mantém a imagem aprovada, preserva a base Cyphers e as animações. */
+@import url("https://cdn.jsdelivr.net/gh/tvittfps/tvitt-gamepadviewer@main/TVITT_GamepadViewer_White_Blue_v5_FIX.css");
+
+/* A arte já contém letras ABXY e ícones Start/Select.
+   Não desenhar uma segunda cópia enquanto o botão estiver solto. */
+.custom .abxy .button:not(.pressed) {
+  opacity: 0 !important;
+}
+.custom .arrows .back:not(.pressed),
+.custom .arrows .start:not(.pressed) {
+  opacity: 0 !important;
+}
+
+/* Na pressão, usar um realce azul transparente sobre o botão da arte,
+   sem sobrepor outra letra. As coordenadas partem da V5. */
+.custom .abxy { left: 473px !important; top: 194px !important; }
+.custom .abxy .button {
+  background-image: none !important;
+  background-color: transparent !important;
+  border-radius: 50% !important;
+  box-sizing: border-box !important;
+  filter: none !important;
+}
+.custom .abxy .button.pressed {
+  opacity: 1 !important;
+  margin-top: 0 !important;
+  background-image: none !important;
+  background-color: rgba(20,130,255,.18) !important;
+  box-shadow: inset 0 0 0 3px #36b4ff, 0 0 13px #078bff !important;
+  filter: none !important;
+}
+
+/* A arte já mostra os ícones View e Menu. */
+.custom .arrows { left: 287px !important; top: 259px !important; }
+.custom .arrows .back.pressed,
+.custom .arrows .start.pressed {
+  opacity: 1 !important;
+  background: rgba(0,110,255,.22) !important;
+  box-shadow: inset 0 0 0 2px #32aaff, 0 0 12px #168bff !important;
+}
+.custom .arrows .back::after,
+.custom .arrows .start::after { content: none !important; }
+
+/* A imagem já inclui gatilhos e bumpers em repouso.
+   Só mostrar a camada de animação quando pressionados. */
+.custom .trigger:not(.pressed), .custom .bumper:not(.pressed) { opacity: 0 !important; }
+.custom .trigger.pressed, .custom .bumper.pressed {
+  opacity: 1 !important;
+  filter: brightness(0) saturate(100%) invert(35%) sepia(95%) saturate(3500%) hue-rotate(202deg) brightness(110%) drop-shadow(0 0 6px #008cff) !important;
+}
+
+/* Retirar emblema sobreposto; o Xbox já está desenhado na base. */
+.custom .meta { background: transparent !important; border: 0 !important; box-shadow: none !important; }
+.custom .meta.pressed { box-shadow: 0 0 10px #168bff !important; }

@@ -1,0 +1,9 @@
+TVITT WHITE & BLUE V6
+
+1. Envie TVITT_GamepadViewer_White_Blue_v6.css para a raiz do repositório:
+   https://github.com/tvittfps/tvitt-gamepadviewer
+2. Mantenha publicados os arquivos anteriores V5 FIX e PNG.
+3. Teste:
+https://overlay.gamepadviewer.com/?p=1&s=1&smeter=1&nocurve=1&css=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Ftvittfps%2Ftvitt-gamepadviewer%40main%2FTVITT_GamepadViewer_White_Blue_v6.css
+
+O V6 evita sobreposição de letras e ícones em repouso. Os brilhos dos botões pressionados e o encaixe de LB/RB precisam de validação visual no navegador.
