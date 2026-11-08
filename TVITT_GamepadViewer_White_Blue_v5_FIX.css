@@ -1,0 +1,59 @@
+/* TVITT White & Blue V5 FIX: imagem externa, publique PNG e CSS no mesmo repositorio. */
+/* TVITT WHITE & BLUE V5 - original approved artwork, registered to Xbox 750x630; retains V3 control coordinates. */
+/* TVITT v2 - manter base Cyphers para animação dos comandos */
+@import url("https://cdn.jsdelivr.net/gh/M4teuzz/skingpv@98a9f70e9b66acf3f2104c30cf35a0de073d0b15/skin-gpv-cyphers-xbox/stylesheet.css");
+:root { --cyphers-red:#0869ff; --cyphers-bright:#20a5ff; --cyphers-glow:rgba(0,105,255,.65); --active-red:brightness(0) saturate(100%) invert(32%) sepia(100%) saturate(3300%) hue-rotate(205deg) brightness(110%) contrast(105%); }
+.controller.custom { background-image:url("https://cdn.jsdelivr.net/gh/tvittfps/tvitt-gamepadviewer@main/TVITT_White_Blue_base_750x630.png") !important; background-position:center center !important; background-size:750px 630px !important; filter:drop-shadow(0 0 5px rgba(0,0,0,.7)) !important; }
+.controller.custom::before,.controller.custom::after { display:none !important; content:none !important; }
+/* Esconder emblema Oni; manter logo TVITT na arte */
+.custom .meta { background:transparent !important; background-image:none !important; border:0 !important; box-shadow:none !important; }
+.custom .meta.pressed { background:rgba(0,110,255,.25) !important; box-shadow:0 0 13px #008cff !important; }
+/* Analogicos Oni: converter o fogo vermelho para azul eletrico */
+.custom .stick { filter:hue-rotate(210deg) saturate(1.45) brightness(1.18) drop-shadow(0 0 5px rgba(0,125,255,.65)) !important; }
+.custom .stick.pressed { filter:hue-rotate(210deg) saturate(1.7) brightness(1.3) drop-shadow(0 0 12px #078bff) !important; }
+/* Alinhamento de comandos na arte TVITT */
+.custom .dpad { left:215px !important; top:342px !important; }
+.custom .abxy { left:480px !important; top:192px !important; }
+.custom .arrows { left:306px !important; top:264px !important; }
+.custom .dpad::before { display:none !important; }
+/* Gatilhos azuis em vez de vermelho quando acionados */
+.custom .trigger,.custom .bumper,.custom .face { filter:var(--active-red) drop-shadow(0 0 7px rgba(0,110,255,.7)) !important; }
+
+
+/* TVITT V3: posicoes calculadas sobre os recortes da arte 750x630. */
+.custom .abxy { left: 494px !important; top: 202px !important; }
+.custom .dpad { left: 230px !important; top: 342px !important; }
+/* View (Select) e Menu (Start) sempre visiveis; estado pressionado mantido. */
+.custom .arrows { left: 303px !important; top: 263px !important; width: 150px !important; height: 38px !important; }
+.custom .back, .custom .start {
+  opacity: 1 !important; width: 34px !important; height: 34px !important;
+  background: #10151c !important; border: 2px solid #050b17 !important;
+  border-radius: 50% !important; box-sizing: border-box !important;
+  box-shadow: inset 0 0 0 1px #263e62, 0 0 2px rgba(0,0,0,.8) !important;
+  filter: none !important;
+}
+.custom .back { left: 0 !important; }
+.custom .start { right: 0 !important; }
+.custom .back::after, .custom .start::after {
+  position: absolute !important; inset: 0 !important; display: flex !important;
+  justify-content: center !important; align-items: center !important;
+  color: #e8f4ff !important; font: bold 17px/1 Arial,sans-serif !important;
+  pointer-events: none !important;
+}
+.custom .back::after { content: "▣" !important; font-size: 16px !important; }
+.custom .start::after { content: "☰" !important; }
+.custom .back.pressed, .custom .start.pressed {
+  background: #0869ff !important; box-shadow: 0 0 12px #168bff !important;
+}
+/* Realce azul somente quando o botao ABXY e pressionado. */
+.custom .button.pressed { filter: drop-shadow(0 0 8px #168bff) !important; }
+
+/* V5: Preserve the approved white/blue artwork and the already-aligned interactive controls. */
+
+.custom .trigger:not(.pressed), .custom .bumper:not(.pressed) { filter: none !important; }
+
+.custom .trigger.pressed, .custom .bumper.pressed { filter: var(--active-red) drop-shadow(0 0 7px rgba(0,110,255,.7)) !important; }
+
+.custom .face:not(.pressed) { filter: none !important; }
+
+.custom .face.pressed { filter: drop-shadow(0 0 8px #168bff) !important; }
