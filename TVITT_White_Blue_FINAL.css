@@ -31,9 +31,8 @@
 .custom .trigger,.custom .bumper {background-image:none !important;background-color:rgba(0,112,255,.75) !important;filter:drop-shadow(0 0 6px #168cff) !important;}
 .custom .trigger {clip-path:polygon(38% 0,80% 0,100% 25%,100% 90%,0 100%,10% 45%);}
 .custom .bumper {clip-path:polygon(0 45%,80% 0,100% 45%,90% 95%,0 100%);}
-/* TVITT White & Blue - Correção de transparência */
-html,
-body {
+/* TVITT - Transparência */
+html, body {
     background: transparent !important;
     background-color: transparent !important;
 }
